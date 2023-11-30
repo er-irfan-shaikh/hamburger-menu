@@ -130,17 +130,8 @@ footer p {
 .cross{
     display: none;
 }
-@media (max-width: 960px) {
-  .option {
-    gap: 1rem;
-  }
-  .option p {
-    font-family: Poppins;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-  }
-}
+
+
 @media (max-width: 960px) {
   .option {
     gap: 0.9rem;
@@ -154,12 +145,15 @@ footer p {
 }
 @media (max-width: 768px) {
   .navibar {
-    
+    /* position: relative; */
     padding: 1rem;
     background-color: #f6f0eb;
   }
   .img-caontainer {
     width: 70px;
+  }
+  .posi{
+    position: relative;
   }
   .option {
     width: 208px;
@@ -172,8 +166,9 @@ footer p {
     z-index: 1;
     /* display: flex; */
     flex-direction: column;
-    /* display: none; */
+    display: none;
     position: absolute;
+    transition: all 0.35s ease-in-out;
   }
   .option p{
     font-size: 1rem;
@@ -182,10 +177,20 @@ footer p {
    
     display: flex;
   }
+  .hide{
+    display:none
+  }
   .cross {
     text-align: end;
     margin-right: 1rem;
     display: block;
+  }
+  .optionhide{
+    display: flex;
+    left: 60%;
+  }
+  .crosshide{
+    display: none;
   }
   .content {
     margin-inline: 1.7rem;

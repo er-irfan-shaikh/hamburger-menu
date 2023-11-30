@@ -1,15 +1,20 @@
 const hamburger = document.querySelector(".haburger img")
-const cross = document.querySelector(".option")
-const crossimg = document.querySelector(".option img")
+const option = document.querySelector(".option")
+const cross = document.querySelector(".cross")
+
+
+
+
+
 
 hamburger.addEventListener("click",(e)=>{
-     e.target.parentElement.style.display = "none"
-     cross.style.right = "40px"
-        
+   e.target.parentElement.classList.toggle("hide")
+   option.classList.toggle("optionhide")
+   // option.style.left ="60%"
+
 })
-crossimg.addEventListener("click",(e)=>{
-   e.target.parentElement.parentElement.style.display = "none"
-   
-   hamburger.parentElement.style.display = "flex"
-        
+
+cross.addEventListener("click",(e)=>{
+   hamburger.parentElement.classList.toggle("hide")
+   option.classList.toggle("optionhide")
 })
